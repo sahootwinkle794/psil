@@ -26,80 +26,7 @@
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .vertical-tabs-container {
-            display: flex;
-            flex-direction: row;
-            margin: 40px auto;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        .tab-buttons {
-            flex: 1 1 200px;
-            display: flex;
-            flex-direction: column;
-            background: #f8f8f8;
-            border-right: 1px solid #ddd;
-        }
-
-        .tab-buttons .tab-btn {
-            padding: 25px;
-            background: none;
-            border: none;
-            text-align: left;
-            width: 100%;
-            cursor: pointer;
-            font-size: 26px;
-            border-bottom: 1px solid #eee;
-            transition: background 0.3s;
-        }
-
-        .tab-buttons .tab-btn:hover,
-        .tab-buttons .tab-btn.active {
-            background-color: #e0e0e0;
-            font-weight: bold;
-        }
-
-        .tab-content {
-            flex: 3 1 600px;
-            padding: 20px;
-        }
-
-        .tab-panel {
-            display: none;
-        }
-
-        .tab-panel.active {
-            display: block;
-        }
-
-        /* Responsive: horizontal tabs on small screens */
-        @media (max-width: 768px) {
-            .vertical-tabs-container {
-                flex-direction: column;
-            }
-
-            .tab-buttons {
-                flex-direction: row;
-                border-right: none;
-                border-bottom: 1px solid #ddd;
-            }
-
-            .tab-buttons .tab-btn {
-                flex: 1;
-                min-width: auto;
-                border-right: 1px solid #eee;
-                text-align: center;
-            }
-
-            .tab-buttons .tab-btn:last-child {
-                border-right: none;
-            }
-        }
-    </style>
+  
 </head>
 
 <body class="white-bg">
@@ -181,7 +108,7 @@
                                             <ul class="sub-menu">
                                                 <li><a href="about.html">About PSIL</a></li>
                                                 <li><a href="team-details.html"> Message From Leader</a></li>
-                                                <li><a href="team.html">Our Team</a></li>
+                                                <!-- <li><a href="team.html">Our Team</a></li> -->
 
                                             </ul>
                                         </li>
@@ -482,7 +409,15 @@
                                                     id="email" placeholder="Email Address">
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-xl-4">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control style-border3" name="number"
+                                                    id="number" placeholder="Contact Number">
+                                                <label class="form-icon-right2">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8">
                                             <div class="form-group">
                                                 <select name="subject" id="subject" class="form-select style-white">
                                                     <option value="" disabled selected hidden>Select Service</option>
@@ -526,7 +461,7 @@
             </div>
         </section>
         <!--======== / Contact Section ========-->
-        <section class="pt-120 pb-120">
+        <section class="map-con pt-120 pb-120">
             <div class="container">
                 <div class="section__title mb-30 text-center">
                     <span class="sub-title">Our Corporate Office</span>
@@ -535,44 +470,229 @@
                 </div>
                 <div class="vertical-tabs-container">
                     <div class="tab-buttons">
-                        <button class="tab-btn active" onclick="showTab(event, 'tab1')">Bhubaneswar</button>
-                        <button class="tab-btn" onclick="showTab(event, 'tab2')">Kolkata</button>
-                        <button class="tab-btn" onclick="showTab(event, 'tab3')">Dubai</button>
-                        <button class="tab-btn" onclick="showTab(event, 'tab4')">China</button>
+                        <button class="tab-btn active" onclick="showTab(event, 'tab1')">
+
+                            <img src="assets/img/icon/offc.svg" alt="office">
+                            <div class="location-text">
+                                <p>Head Office</p>
+                                <h4>Kolkata</h4>
+                            </div>
+                        </button>
+                        <button class="tab-btn" onclick="showTab(event, 'tab2')">
+                            <img src="assets/img/icon/offc.svg" alt="office">
+                            <div class="location-text">
+                                <p>Corporate Office</p>
+                                <h4>Bhubaneswar</h4>
+                            </div>
+                        </button>
+                        <button class="tab-btn" onclick="showTab(event, 'tab3')">
+                            <img src="assets/img/icon/offc.svg" alt="office">
+                            <div class="location-text">
+                                <p>Other Office</p>
+                                <h4>Dubai</h4>
+                            </div>
+                        </button>
+                        <button class="tab-btn" onclick="showTab(event, 'tab4')">
+                            <img src="assets/img/icon/offc.svg" alt="office">
+                            <div class="location-text">
+                                <p>Other Office</p>
+                                <h4>China</h4>
+                            </div>
+                        </button>
                     </div>
 
                     <div class="tab-content">
                         <div id="tab1" class="tab-panel active">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119743.45184202757!2d85.66455604231501!3d20.300976163333544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1754482898512!5m2!1sen!2sin"
-                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235850.81212011125!2d88.18254112599966!3d22.535343439863773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1754482731425!5m2!1sen!2sin"
+                                width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <h3>Bhubaneswar</h3>
-                            <p>Bhubaneswar Address</p>
+                            <div class="contact-map-area">
+                                <div class="container">
+                                    <div class="contact-info-wrap">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-map-marked-alt"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Service Station</p>
+                                                        <h4>Kolkata</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-phone-alt"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Call Us 24/7</p>
+                                                        <h4>+91 777789234</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-envelope-open-text"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Make a Quote</p>
+                                                        <h4>sales@psil.co.in</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="tab2" class="tab-panel">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235850.81212011125!2d88.18254112599966!3d22.535343439863773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1754482731425!5m2!1sen!2sin"
-                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119743.45184202757!2d85.66455604231501!3d20.300976163333544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1754482898512!5m2!1sen!2sin"
+                                width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <h3>Kolkata</h3>
-                            <p>Kolkata Address</p>
+                            <div class="contact-map-area">
+                                <div class="container">
+                                    <div class="contact-info-wrap">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-map-marked-alt"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Service Station</p>
+                                                        <h4>Bhubaneswar</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-phone-alt"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Call Us 24/7</p>
+                                                        <h4>+91 777789234</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-envelope-open-text"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Make a Quote</p>
+                                                        <h4>sales@psil.co.in</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="tab3" class="tab-panel">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.68281058717!2d54.89783100804447!3d25.076280450897595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1754482945726!5m2!1sen!2sin"
-                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <h3>Dubai</h3>
-                            <p>Dubai Address</p>
+                            <div class="contact-map-area">
+                                <div class="container">
+                                    <div class="contact-info-wrap">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-map-marked-alt"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Service Station</p>
+                                                        <h4>Dubai</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-phone-alt"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Call Us 24/7</p>
+                                                        <h4>+91 777789234</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-envelope-open-text"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Make a Quote</p>
+                                                        <h4>sales@psil.co.in</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="tab4" class="tab-panel">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27126204.484299965!2d82.78470101443237!3d33.907568041493064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31508e64e5c642c1%3A0x951daa7c349f366f!2sChina!5e0!3m2!1sen!2sin!4v1754482996294!5m2!1sen!2sin"
-                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <h3>China</h3>
-                            <p>China Address</p>
+                            <div class="contact-map-area">
+                                <div class="container">
+                                    <div class="contact-info-wrap">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-map-marked-alt"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Service Station</p>
+                                                        <h4>China</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-phone-alt"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Call Us 24/7</p>
+                                                        <h4>+91 777789234</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact-info-card">
+                                                    <div class="contact-info-icon">
+                                                        <i class="fas fa-envelope-open-text"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Make a Quote</p>
+                                                        <h4>sales@psil.co.in</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -704,56 +824,76 @@
                         </div>
                         <div class="col-xl-auto col-md-6">
                             <div class="footer__widget footer__links">
-                                <h4 class="footer__widget-title">Quick Links</h4>
+                                <h4 class="footer__widget-title">Services</h4>
                                 <ul class="list-wrap">
                                     <li>
-                                        <a href="about.html">
+                                        <a href="minerals-trading.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            About Us
+                                            Minerals Trading
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="project.html">
+                                        <a href="cargo-logistics.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            Portfolio
+                                            Cargo Logistics
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="appointment.html">
+                                        <a href="power-transmission-&-distribution.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            Appointment
+                                            Power Transmission & Distribution
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="blog.html">
+                                        <a href="renewable-energy.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            Blog
+                                            Renewable Energy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">
+                                        <a href="manufacturing.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            Contact Us
+                                            Manufacturing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gamma-irradiation-facility.html">
+                                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                            Gamma Irradiation Facility
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="technology.html">
+                                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                            Technology
                                         </a>
                                     </li>
                                 </ul>

@@ -28,45 +28,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        .home2-portfolio-section-content-wrapper:hover .portfolio-cursor {
-            visibility: visible;
-        }
 
-
-        .home2-faq-section-content-wrapper {
-            padding: 25px 0;
-        }
-
-        .home2-section-image-block {
-            height: 100%;
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-        }
-
-        .faq-single-image-holder.item-1 {
-            position: relative;
-            z-index: 3;
-        }
-
-        .faq-single-image-holder.item-2 {
-            position: absolute;
-            left: 0%;
-            top: 0%;
-            z-index: 2;
-        }
-
-        .faq-single-image-holder.item-3 {
-            position: absolute;
-            right: 0%;
-            top: 10%;
-            z-index: 1;
-        }
-
-        .faq-single-image-holder {
-            animation: imagemove 10s ease infinite;
-        }
     </style>
 </head>
 
@@ -149,7 +111,7 @@
                                             <ul class="sub-menu">
                                                 <li><a href="about.html">About PSIL</a></li>
                                                 <li><a href="team-details.html"> Message From Leader</a></li>
-                                                <li><a href="team.html">Our Team</a></li>
+                                                <!-- <li><a href="team.html">Our Team</a></li> -->
 
                                             </ul>
                                         </li>
@@ -562,21 +524,13 @@
                                         <div class="col-xl-6">
                                             <div class="form-group">
                                                 <select name="subject" id="subject" class="form-select style-border3">
-                                                    <option value="" disabled selected hidden>Select Service</option>
-                                                    <option value="Minerals Trading">Minerals Trading</option>
-                                                    <option value="Cargo Logistics">Cargo Logistics</option>
-                                                    <option value="Power Transmission
-                                                        & Distribution">Power Transmission
-                                                        & Distribution</option>
-                                                    <option value="Renewable Energy">Renewable Energy</option>
-                                                    <option value="Manufacturing">Manufacturing</option>
-                                                    <option value="Power Transmission
-                                                        & Distribution">Gamma Irradiation
-                                                        Facility</option>
-                                                    <option value="Power Transmission
-                                                        & Distribution">Technology</option>
-                                                    <option value="Power Transmission
-                                                        & Distribution">Others</option>
+                                                    <option value="" disabled selected hidden>Years Of Experience</option>
+                                                    <option value="5-6">5-6 Years</option>
+                                                    <option value="6-7">6-7 Years</option>
+                                                    <option value="7-8">7-8 Years</option>
+                                                    <option value="8-9">8-9 Years</option>
+                                                    <option value="9-10">9-10 Years</option>
+                                                    
                                                 </select>
                                                 <label class="form-icon-right2">
                                                     <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
@@ -588,6 +542,33 @@
                                                 </label>
                                             </div>
                                         </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <select name="subject" id="subject" class="form-select style-border3">
+                                                    <option value="" disabled selected hidden>Select Position</option>
+                                                    <option value="Business Manager">Business Manager</option>
+                                                    <option value="Business Finance Manager">Business Finance Manager</option>
+                                                    <option value="Business Analyst">Business Analyst</option>
+                                                    
+                                                </select>
+                                                <label class="form-icon-right2">
+                                                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.125 0.6875C1.21875 0.5625 1.34375 0.5 1.5 0.5C1.59375 0.5 1.71875 0.53125 1.8125 0.625L7.96875 6.28125L14.1562 0.625C14.3438 0.4375 14.6562 0.4375 14.8438 0.65625C15.0312 0.84375 15.0312 1.15625 14.8125 1.34375L8.3125 7.34375C8.125 7.53125 7.84375 7.53125 7.65625 7.34375L1.15625 1.34375C0.9375 1.1875 0.9375 0.875 1.125 0.6875Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group cv-row">
+                                                <label for="file-upload " class="cv-label">Upload Your CV :</label>
+                                                <input type="file" class="form-control style-border3 cv-input" id="file-upload"
+                                                    name="file-upload" placeholder="Upload Your CV">
+                                            </div>
+                                        </div>
+
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <textarea name="message" placeholder="Type Your Message"
@@ -606,7 +587,7 @@
             </div>
         </section>
         <!--======== / Blog Section ========-->
-       
+
         <!--==============================
     Cta Area 2
     ==============================-->
@@ -680,61 +661,82 @@
                         </div>
                         <div class="col-xl-auto col-md-6">
                             <div class="footer__widget footer__links">
-                                <h4 class="footer__widget-title">Quick Links</h4>
+                                <h4 class="footer__widget-title">Services</h4>
                                 <ul class="list-wrap">
                                     <li>
-                                        <a href="about.html">
+                                        <a href="minerals-trading.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            About Us
+                                            Minerals Trading
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="project.html">
+                                        <a href="cargo-logistics.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            Portfolio
+                                            Cargo Logistics
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="appointment.html">
+                                        <a href="power-transmission-&-distribution.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            Appointment
+                                            Power Transmission & Distribution
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="blog.html">
+                                        <a href="renewable-energy.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            Blog
+                                            Renewable Energy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">
+                                        <a href="manufacturing.html">
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
                                                     stroke-width="1.5" />
                                             </svg>
-                                            Contact Us
+                                            Manufacturing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gamma-irradiation-facility.html">
+                                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                            Gamma Irradiation Facility
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="technology.html">
+                                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 1L15 7M15 7L9 13M15 7H0" stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                            Technology
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+
                         <div class="col-xl-auto col-md-6">
                             <div class="footer__widget footer__contact">
                                 <h4 class="footer__widget-title">Office Inforamtion</h4>
