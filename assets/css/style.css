@@ -14412,3 +14412,28 @@ blockquote .blockquote-card_title:before {
 }
 
 /*# sourceMappingURL=style.css.map */
+.para-con{
+  display: flex;
+}
+.tik-icon img{
+  width: 20px;
+  margin-right: 20px;
+}
+.exp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.loc-job{
+  display: flex;
+  align-items: center;
+}
+.pin{
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+button.accordion-button.collapsed {
+    font-size: 20px;
+}

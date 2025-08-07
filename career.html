@@ -3,12 +3,14 @@
 
 
 <!-- Mirrored from valom-html-demo.vercel.app/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Jul 2025 11:59:22 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Patnaik Steel international LTD.</title>
-    <meta name="description" content="Valom Business Consultancy HTML Template">
+    <title>Patnaik Steel International Ltd.</title>
+    <meta name="description" content="Patnaik Steel International Ltd.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/psil_logo.png">
@@ -24,6 +26,48 @@
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .home2-portfolio-section-content-wrapper:hover .portfolio-cursor {
+            visibility: visible;
+        }
+
+
+        .home2-faq-section-content-wrapper {
+            padding: 25px 0;
+        }
+
+        .home2-section-image-block {
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .faq-single-image-holder.item-1 {
+            position: relative;
+            z-index: 3;
+        }
+
+        .faq-single-image-holder.item-2 {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            z-index: 2;
+        }
+
+        .faq-single-image-holder.item-3 {
+            position: absolute;
+            right: 0%;
+            top: 10%;
+            z-index: 1;
+        }
+
+        .faq-single-image-holder {
+            animation: imagemove 10s ease infinite;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,13 +91,13 @@
     <!-- header-area -->
     <header>
         <div id="header-fixed-height"></div>
-        <div class="tg-header__top tg-header__top-four d-lg-block d-none">
+        <!-- <div class="tg-header__top tg-header__top-four d-lg-block d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
                         <ul
                             class="tg-header__top-info left-side list-wrap justify-content-xl-start justify-content-center">
-                            <li>We’re ready to make your car perfect <a href="service.html">Get Service <i
+                            <li>  <a href="service.html">Get Service <i
                                         class="fas fa-arrow-right"></i></a></li>
                         </ul>
                     </div>
@@ -82,7 +126,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="sticky-header" class="tg-header__area tg-header__area-five">
             <div class="container">
                 <div class="row">
@@ -93,7 +137,7 @@
                                     <a href="index.html"><img src="assets/img/psil_logo.png" alt="Logo"></a>
                                     <div class="logo-text">
                                         <h4>PSIL</h4>
-                                        <p>Patnaik Steel international LTD.</p>
+                                        <p>Patnaik Steel International Ltd.</p>
                                     </div>
                                 </div>
                                 <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
@@ -104,9 +148,9 @@
                                         <li class="menu-item-has-children"><a href="#">About Us</a>
                                             <ul class="sub-menu">
                                                 <li><a href="about.html">About PSIL</a></li>
-                                                <li><a href="team-details.html">Message From Managing Director</a></li>
+                                                <li><a href="team-details.html"> Message From Leader</a></li>
                                                 <li><a href="team.html">Our Team</a></li>
-                                                
+
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Services</a>
@@ -187,9 +231,9 @@
                         </div>
                         <div class="info-card_content">
                             <p class="info-card_text">Our Locations</p>
-                            <p class="info-card_link">Kolkatta</p>
+                            <p class="info-card_link">Kolkata</p>
                             <!-- <div class="text-container">
-                                <div class="text">Kolkatta</div>
+                                <div class="text">Kolkata</div>
                                 <div class="text">South East</div>
                             </div> -->
                         </div>
@@ -286,13 +330,33 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-xl-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control style-border3" name="number"
+                                                id="number" placeholder="Contact Number">
+                                            <label class="form-icon-right2">
+                                                <img src="assets/img/icon/call.png" alt="call">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
                                         <div class="form-group">
                                             <select name="subject" id="subject" class="form-select style-border3">
                                                 <option value="" disabled selected hidden>Select Service</option>
-                                                <option value="Business">Business</option>
-                                                <option value="Managment">Managment</option>
-                                                <option value="Analysis">Analysis</option>
+                                                <option value="Minerals Trading">Minerals Trading</option>
+                                                <option value="Cargo Logistics">Cargo Logistics</option>
+                                                <option value="Power Transmission
+                                                        & Distribution">Power Transmission
+                                                    & Distribution</option>
+                                                <option value="Renewable Energy">Renewable Energy</option>
+                                                <option value="Manufacturing">Manufacturing</option>
+                                                <option value="Power Transmission
+                                                        & Distribution">Gamma Irradiation
+                                                    Facility</option>
+                                                <option value="Power Transmission
+                                                        & Distribution">Technology</option>
+                                                <option value="Power Transmission
+                                                        & Distribution">Others</option>
                                             </select>
                                             <label class="form-icon-right2">
                                                 <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
@@ -304,34 +368,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <input type="text" class="date-pick form-control style-border3" name="date"
-                                                id="date-pick" placeholder="Select Date">
-                                            <label class="form-icon-right2">
-                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12 2H10.75V0.75C10.75 0.34375 10.4062 0 10 0C9.625 0 9.25 0.34375 9.25 0.75V2H4.75V0.75C4.75 0.34375 4.40625 0 4 0C3.5625 0 3.25 0.34375 3.25 0.75V2H2C0.875 2 0 2.90625 0 4V14C0 15.125 0.875 16 2 16H12C13.0938 16 14 15.125 14 14V4C14 2.90625 13.0938 2 12 2ZM12 14.5H2C1.71875 14.5 1.5 14.2812 1.5 14V6H12.5V14C12.5 14.2812 12.25 14.5 12 14.5Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <input type="text" class="time-pick form-control style-border3" name="time"
-                                                id="time-pick" placeholder="Select Time">
-                                            <label class="form-icon-right2">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M7.25 3.75C7.25 3.34375 7.5625 3 8 3C8.40625 3 8.75 3.34375 8.75 3.75V7.625L11.4062 9.375C11.75 9.625 11.8438 10.0938 11.5938 10.4375C11.375 10.7812 10.9062 10.875 10.5625 10.625L7.5625 8.625C7.375 8.5 7.25 8.25 7.25 8V3.75ZM8 0C12.4062 0 16 3.59375 16 8C16 12.4375 12.4062 16 8 16C3.5625 16 0 12.4375 0 8C0 3.59375 3.5625 0 8 0ZM1.5 8C1.5 11.5938 4.40625 14.5 8 14.5C11.5625 14.5 14.5 11.5938 14.5 8C14.5 4.4375 11.5625 1.5 8 1.5C4.40625 1.5 1.5 4.4375 1.5 8Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </label>
-                                        </div>
-                                    </div>
+
                                     <div class="col-12">
                                         <div class="form-group">
                                             <textarea name="message" placeholder="Type Your Message" id="contactForm"
@@ -390,21 +427,187 @@
     ==============================-->
         <section class="blog-area-4 pt-120 pb-120">
             <div class="container">
-                 <div class="blog-widget">
+                <div class="blog-widget">
+
+                    <div class="sidebar-cat-list">
+                        <div class="row">
+                            <div class="col-md-6">
                                 <h4 class="widget-title">Current Openings</h4>
-                                <div class="sidebar-cat-list">
-                                    <ul class="list-wrap">
-                                        <li><a href="#">Marketing Manager(5+ Years of Experience) <span>Openings : 2</span><span><i class="fas fa-arrow-right"></i></span></a></li>
-                                        <li><a href="#">Sales Manager(4+ Years of Experience)  <span>Openings : 2</span><span><i class="fas fa-arrow-right"></i></span></a></li>
-                                        <li><a href="#">Marketing Head(7+ Years of Experience) <span>Openings : 2</span><span><i class="fas fa-arrow-right"></i></span></a></li>
-                                        
-                                    </ul>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Business Manager
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="exp">
+                                                    <div class="loc-job">
+                                                        <img src="assets/img/icon/pin.png" alt="pin" class="pin">
+                                                        <div class="loc-text"><b>Kolkata</b></div>
+                                                    </div>
+                                                    <div class="exp-text"><strong>10 - 15 Years Exp</strong></div>
+                                                </div>
+                                                Qualified candidates having relevant experience
+                                                in IT Sales can apply. The selected candidate will manage the entire
+                                                sales in the respective territories, achieve the weekly/monthly/annual
+                                                sales targets, generate revenue growth and build new business
+                                                relationships in the required territories.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Business Finance Manager
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="exp">
+                                                    <div class="loc-job">
+                                                        <img src="assets/img/icon/pin.png" alt="pin" class="pin">
+                                                        <div class="loc-text"><b>Kolkata</b></div>
+                                                    </div>
+                                                    <div class="exp-text"><strong>10 - 15 Years Exp</strong></div>
+                                                </div>
+                                                Qualified candidates having relevant experience
+                                                in leadership role and responsible for facilitating cross-border
+                                                transactions, managing business finance, taxation, and overseeing the
+                                                establishment of new business operations in foreign countries. This role
+                                                serves as the bridge between existing employees in our company and the
+                                                newly established teams, ensuring the successful implementation of the
+                                                CEO's directives.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Business Analyst
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="exp">
+                                                    <div class="loc-job">
+                                                        <img src="assets/img/icon/pin.png" alt="pin" class="pin">
+                                                        <div class="loc-text"><b>Kolkata</b></div>
+                                                    </div>
+                                                    <div class="exp-text"><strong>10 - 15 Years Exp</strong></div>
+                                                </div>
+                                                Qualified candidates having relevant experience
+                                                in IT Project Delivery & Project Implementation activities can apply.
+                                                The candidate should have exposure to Software Development/Testing and
+                                                should be smart and have excellent communication skills. S/He needs to
+                                                involve in Requirement Gathering, Client Interaction, Presentation and
+                                                Analytical Report Preparation.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <h4 class="widget-title">Shape Your Career With Us</h4>
+                                <form action="https://valom-html-demo.vercel.app/mail.php" method="POST"
+                                    class="appointment__form ajax-contact">
+                                    <div class="row gy-20">
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control style-border3" name="name"
+                                                    id="name" placeholder="Your Name">
+                                                <label class="form-icon-right2">
+                                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M7 8C4.78125 8 3 6.21875 3 4C3 1.8125 4.78125 0 7 0C9.1875 0 11 1.8125 11 4C11 6.21875 9.1875 8 7 8ZM7 1C5.34375 1 4 2.375 4 4C4 5.65625 5.34375 7 7 7C8.625 7 10 5.65625 10 4C10 2.375 8.625 1 7 1ZM8.5625 9.5C11.5625 9.5 14 11.9375 14 14.9375C14 15.5312 13.5 16 12.9062 16H1.0625C0.46875 16 0 15.5312 0 14.9375C0 11.9375 2.40625 9.5 5.40625 9.5H8.5625ZM12.9062 15C12.9375 15 13 14.9688 13 14.9375C13 12.5 11 10.5 8.5625 10.5H5.40625C2.96875 10.5 1 12.5 1 14.9375C1 14.9688 1.03125 15 1.0625 15H12.9062Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control style-border3" name="email"
+                                                    id="email" placeholder="Email Address">
+                                                <label class="form-icon-right2">
+                                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M0 2C0 0.90625 0.875 0 2 0H14C15.0938 0 16 0.90625 16 2V10C16 11.125 15.0938 12 14 12H2C0.875 12 0 11.125 0 10V2ZM1 2V3.25L7.09375 7.75C7.625 8.125 8.34375 8.125 8.875 7.75L15 3.25V2C15 1.46875 14.5312 1 14 1H1.96875C1.4375 1 0.96875 1.46875 0.96875 2H1ZM1 4.5V10C1 10.5625 1.4375 11 2 11H14C14.5312 11 15 10.5625 15 10V4.5L9.46875 8.5625C8.59375 9.1875 7.375 9.1875 6.5 8.5625L1 4.5Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control style-border3" name="number"
+                                                    id="number" placeholder="Contact Number">
+                                                <label class="form-icon-right2">
+                                                    <img src="assets/img/icon/call.png" alt="call">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <select name="subject" id="subject" class="form-select style-border3">
+                                                    <option value="" disabled selected hidden>Select Service</option>
+                                                    <option value="Minerals Trading">Minerals Trading</option>
+                                                    <option value="Cargo Logistics">Cargo Logistics</option>
+                                                    <option value="Power Transmission
+                                                        & Distribution">Power Transmission
+                                                        & Distribution</option>
+                                                    <option value="Renewable Energy">Renewable Energy</option>
+                                                    <option value="Manufacturing">Manufacturing</option>
+                                                    <option value="Power Transmission
+                                                        & Distribution">Gamma Irradiation
+                                                        Facility</option>
+                                                    <option value="Power Transmission
+                                                        & Distribution">Technology</option>
+                                                    <option value="Power Transmission
+                                                        & Distribution">Others</option>
+                                                </select>
+                                                <label class="form-icon-right2">
+                                                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.125 0.6875C1.21875 0.5625 1.34375 0.5 1.5 0.5C1.59375 0.5 1.71875 0.53125 1.8125 0.625L7.96875 6.28125L14.1562 0.625C14.3438 0.4375 14.6562 0.4375 14.8438 0.65625C15.0312 0.84375 15.0312 1.15625 14.8125 1.34375L8.3125 7.34375C8.125 7.53125 7.84375 7.53125 7.65625 7.34375L1.15625 1.34375C0.9375 1.1875 0.9375 0.875 1.125 0.6875Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea name="message" placeholder="Type Your Message"
+                                                    id="contactForm" class="form-control style-border3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn mt-30">
+                                        <span class="btn-text" data-text="Submit"></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!--======== / Blog Section ========-->
-<!--==============================
+       
+        <!--==============================
     Cta Area 2
     ==============================-->
         <section class="cta-area-2 overflow-hidden gray-bg bg-cover pt-50 pb-50"
@@ -414,7 +617,7 @@
                     <div class="row gy-40 justify-content-xl-between justify-content-center align-items-center">
                         <div class="col-xl-9">
                             <div class="section__title text-xl-start text-center">
-                                <h2 class="title text-white">New Horizons Ahead: Let’s Achieve Great Things! 
+                                <h2 class="title text-white">New Horizons Ahead: Let’s Achieve Great Things!
                             </div>
                         </div>
                         <div class="col-auto">
@@ -434,7 +637,7 @@
 
 
     <!-- footer-area -->
-     <footer>
+    <footer>
         <div class="footer__area footer__area-four gray-bg">
             <div class="container">
                 <div class="footer__middle">
@@ -445,7 +648,7 @@
                                     <a href="index.html"><img src="assets/img/psil_logo.png" alt="logo"></a>
                                     <div class="logo-text">
                                         <h4>PSIL</h4>
-                                        <p>Patnaik Steel international LTD.</p>
+                                        <p>Patnaik Steel International Ltd.</p>
                                     </div>
                                 </div>
                                 <p class="footer__content mb-35">
@@ -559,7 +762,7 @@
                                     </div>
                                     <div class="footer__info-content">
                                         <h4 class="title">Our Location</h4>
-                                        <p>Kolkatta</p>
+                                        <p>Kolkata</p>
                                     </div>
                                 </div>
                             </div>
@@ -599,8 +802,10 @@
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 
 <!-- Mirrored from valom-html-demo.vercel.app/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Jul 2025 11:59:30 GMT -->
+
 </html>

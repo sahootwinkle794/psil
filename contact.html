@@ -9,8 +9,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Patnaik Steel international LTD.</title>
-    <meta name="description" content="Valom Business Consultancy HTML Template">
+    <title>Patnaik Steel International Ltd.</title>
+    <meta name="description" content="Patnaik Steel International Ltd.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/psil_logo.png">
@@ -26,6 +26,80 @@
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .vertical-tabs-container {
+            display: flex;
+            flex-direction: row;
+            margin: 40px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .tab-buttons {
+            flex: 1 1 200px;
+            display: flex;
+            flex-direction: column;
+            background: #f8f8f8;
+            border-right: 1px solid #ddd;
+        }
+
+        .tab-buttons .tab-btn {
+            padding: 25px;
+            background: none;
+            border: none;
+            text-align: left;
+            width: 100%;
+            cursor: pointer;
+            font-size: 26px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.3s;
+        }
+
+        .tab-buttons .tab-btn:hover,
+        .tab-buttons .tab-btn.active {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            flex: 3 1 600px;
+            padding: 20px;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        /* Responsive: horizontal tabs on small screens */
+        @media (max-width: 768px) {
+            .vertical-tabs-container {
+                flex-direction: column;
+            }
+
+            .tab-buttons {
+                flex-direction: row;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .tab-buttons .tab-btn {
+                flex: 1;
+                min-width: auto;
+                border-right: 1px solid #eee;
+                text-align: center;
+            }
+
+            .tab-buttons .tab-btn:last-child {
+                border-right: none;
+            }
+        }
+    </style>
 </head>
 
 <body class="white-bg">
@@ -49,13 +123,13 @@
     <!-- header-area -->
     <header>
         <div id="header-fixed-height"></div>
-        <div class="tg-header__top tg-header__top-four d-lg-block d-none">
+        <!-- <div class="tg-header__top tg-header__top-four d-lg-block d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
                         <ul
                             class="tg-header__top-info left-side list-wrap justify-content-xl-start justify-content-center">
-                            <li>We’re ready to make your car perfect <a href="service.html">Get Service <i
+                            <li>  <a href="service.html">Get Service <i
                                         class="fas fa-arrow-right"></i></a></li>
                         </ul>
                     </div>
@@ -84,7 +158,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="sticky-header" class="tg-header__area tg-header__area-five">
             <div class="container">
                 <div class="row">
@@ -95,7 +169,7 @@
                                     <a href="index.html"><img src="assets/img/psil_logo.png" alt="Logo"></a>
                                     <div class="logo-text">
                                         <h4>PSIL</h4>
-                                        <p>Patnaik Steel international LTD.</p>
+                                        <p>Patnaik Steel International Ltd.</p>
                                     </div>
                                 </div>
                                 <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
@@ -103,12 +177,12 @@
                                         <li><a href="index.html">Home</a></li>
 
                                         </li>
-                                         <li class="menu-item-has-children"><a href="#">About Us</a>
+                                        <li class="menu-item-has-children"><a href="#">About Us</a>
                                             <ul class="sub-menu">
                                                 <li><a href="about.html">About PSIL</a></li>
-                                                <li><a href="team-details.html">Message From Managing Director</a></li>
+                                                <li><a href="team-details.html"> Message From Leader</a></li>
                                                 <li><a href="team.html">Our Team</a></li>
-                                                
+
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Services</a>
@@ -189,9 +263,9 @@
                         </div>
                         <div class="info-card_content">
                             <p class="info-card_text">Our Locations</p>
-                            <p class="info-card_link">Kolkatta</p>
+                            <p class="info-card_link">Kolkata</p>
                             <!-- <div class="text-container">
-                                <div class="text">Kolkatta</div>
+                                <div class="text">Kolkata</div>
                                 <div class="text">South East</div>
                             </div> -->
                         </div>
@@ -288,13 +362,33 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-xl-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control style-border3" name="number"
+                                                id="number" placeholder="Contact Number">
+                                            <label class="form-icon-right2">
+                                                <img src="assets/img/icon/call.png" alt="call">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
                                         <div class="form-group">
                                             <select name="subject" id="subject" class="form-select style-border3">
                                                 <option value="" disabled selected hidden>Select Service</option>
-                                                <option value="Business">Business</option>
-                                                <option value="Managment">Managment</option>
-                                                <option value="Analysis">Analysis</option>
+                                                <option value="Minerals Trading">Minerals Trading</option>
+                                                <option value="Cargo Logistics">Cargo Logistics</option>
+                                                <option value="Power Transmission
+                                                        & Distribution">Power Transmission
+                                                    & Distribution</option>
+                                                <option value="Renewable Energy">Renewable Energy</option>
+                                                <option value="Manufacturing">Manufacturing</option>
+                                                <option value="Power Transmission
+                                                        & Distribution">Gamma Irradiation
+                                                    Facility</option>
+                                                <option value="Power Transmission
+                                                        & Distribution">Technology</option>
+                                                <option value="Power Transmission
+                                                        & Distribution">Others</option>
                                             </select>
                                             <label class="form-icon-right2">
                                                 <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
@@ -306,34 +400,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <input type="text" class="date-pick form-control style-border3" name="date"
-                                                id="date-pick" placeholder="Select Date">
-                                            <label class="form-icon-right2">
-                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12 2H10.75V0.75C10.75 0.34375 10.4062 0 10 0C9.625 0 9.25 0.34375 9.25 0.75V2H4.75V0.75C4.75 0.34375 4.40625 0 4 0C3.5625 0 3.25 0.34375 3.25 0.75V2H2C0.875 2 0 2.90625 0 4V14C0 15.125 0.875 16 2 16H12C13.0938 16 14 15.125 14 14V4C14 2.90625 13.0938 2 12 2ZM12 14.5H2C1.71875 14.5 1.5 14.2812 1.5 14V6H12.5V14C12.5 14.2812 12.25 14.5 12 14.5Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <input type="text" class="time-pick form-control style-border3" name="time"
-                                                id="time-pick" placeholder="Select Time">
-                                            <label class="form-icon-right2">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M7.25 3.75C7.25 3.34375 7.5625 3 8 3C8.40625 3 8.75 3.34375 8.75 3.75V7.625L11.4062 9.375C11.75 9.625 11.8438 10.0938 11.5938 10.4375C11.375 10.7812 10.9062 10.875 10.5625 10.625L7.5625 8.625C7.375 8.5 7.25 8.25 7.25 8V3.75ZM8 0C12.4062 0 16 3.59375 16 8C16 12.4375 12.4062 16 8 16C3.5625 16 0 12.4375 0 8C0 3.59375 3.5625 0 8 0ZM1.5 8C1.5 11.5938 4.40625 14.5 8 14.5C11.5625 14.5 14.5 11.5938 14.5 8C14.5 4.4375 11.5625 1.5 8 1.5C4.40625 1.5 1.5 4.4375 1.5 8Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </label>
-                                        </div>
-                                    </div>
+
                                     <div class="col-12">
                                         <div class="form-group">
                                             <textarea name="message" placeholder="Type Your Message" id="contactForm"
@@ -459,9 +526,63 @@
             </div>
         </section>
         <!--======== / Contact Section ========-->
+        <section class="pt-120 pb-120">
+            <div class="container">
+                <div class="section__title mb-30 text-center">
+                    <span class="sub-title">Our Corporate Office</span>
+                    <h2 class="title">The Foundation of Our Global Operations</h2>
 
+                </div>
+                <div class="vertical-tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="showTab(event, 'tab1')">Bhubaneswar</button>
+                        <button class="tab-btn" onclick="showTab(event, 'tab2')">Kolkata</button>
+                        <button class="tab-btn" onclick="showTab(event, 'tab3')">Dubai</button>
+                        <button class="tab-btn" onclick="showTab(event, 'tab4')">China</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-panel active">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119743.45184202757!2d85.66455604231501!3d20.300976163333544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1754482898512!5m2!1sen!2sin"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <h3>Bhubaneswar</h3>
+                            <p>Bhubaneswar Address</p>
+                        </div>
+                        <div id="tab2" class="tab-panel">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235850.81212011125!2d88.18254112599966!3d22.535343439863773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1754482731425!5m2!1sen!2sin"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <h3>Kolkata</h3>
+                            <p>Kolkata Address</p>
+                        </div>
+                        <div id="tab3" class="tab-panel">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.68281058717!2d54.89783100804447!3d25.076280450897595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1754482945726!5m2!1sen!2sin"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <h3>Dubai</h3>
+                            <p>Dubai Address</p>
+                        </div>
+                        <div id="tab4" class="tab-panel">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27126204.484299965!2d82.78470101443237!3d33.907568041493064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31508e64e5c642c1%3A0x951daa7c349f366f!2sChina!5e0!3m2!1sen!2sin!4v1754482996294!5m2!1sen!2sin"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <h3>China</h3>
+                            <p>China Address</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
         <!-- contact-map -->
-        <div class="contact-map-area pt-120 pb-120">
+        <!-- <div class="contact-map-area pt-120 pb-120">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48409.69813174607!2d-74.05163325136718!3d40.68264649999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bae694479a3%3A0xb9949385da52e69e!2sBarclays%20Center!5e0!3m2!1sen!2sbd!4v1684309529719!5m2!1sen!2sbd"
                 style="border:0;" allowfullscreen="" loading="lazy"
@@ -501,14 +622,14 @@
                                 </div>
                                 <div class="media-body">
                                     <p>Service Station</p>
-                                    <h4>Kolkatta</h4>
+                                    <h4>Kolkata</h4>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- contact-map-end -->
         <!--==============================
     Cta Area 2
@@ -551,7 +672,7 @@
                                     <a href="index.html"><img src="assets/img/psil_logo.png" alt="logo"></a>
                                     <div class="logo-text">
                                         <h4>PSIL</h4>
-                                        <p>Patnaik Steel international LTD.</p>
+                                        <p>Patnaik Steel International Ltd.</p>
                                     </div>
                                 </div>
                                 <p class="footer__content mb-35">
@@ -665,7 +786,7 @@
                                     </div>
                                     <div class="footer__info-content">
                                         <h4 class="title">Our Location</h4>
-                                        <p>Kolkatta</p>
+                                        <p>Kolkata</p>
                                     </div>
                                 </div>
                             </div>
@@ -708,6 +829,22 @@
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function showTab(evt, tabId) {
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            document.getElementById(tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+
+
 </body>
 
 
