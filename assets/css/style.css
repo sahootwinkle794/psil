@@ -281,7 +281,7 @@ h1 {
 }
 
 .social-icon:hover {
-  color: yellow;
+  color: #ffff;
 }
 
 
@@ -4698,8 +4698,26 @@ header {
 .hero-feature-grid .box-icon svg,
 .hero-feature-grid .box-icon img {
   transition: 0.4s;
+
 }
 
+.accordion-button:not(.collapsed) {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--tg-theme-txt);
+  background-color: #ff660021;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.serv-icon img {
+  width: 60px !important;
+  height: 132px !important;
+}
+
+/* .box-icon img{
+  width: 60px !important;
+  height: 132px !important;
+} */
 .hero-feature-grid .box-details {
   align-self: center;
 }
@@ -12984,6 +13002,7 @@ blockquote .blockquote-card_title:before {
   position: relative;
 }
 
+
 .goal-thumb1-1 img {
   height: 100%;
   object-fit: cover;
@@ -14605,7 +14624,7 @@ button.accordion-button.collapsed {
   }
 
   .tab-buttons {
-    flex-direction: row;
+    flex-direction: column;
     border-right: none;
     border-bottom: 1px solid #ddd;
   }
@@ -14745,3 +14764,80 @@ button.accordion-button.collapsed {
 }
 
 /* location text change end  */
+.about-serv img {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.goal-thumb1-1 {
+  position: relative;
+}
+
+
+@media only screen and (max-width: 750px) and (min-width: 350px) {
+  .logo-text p {
+    font-size: 14px;
+  }
+
+  .hero-wrapper.hero-1 {
+    margin-top: 27% !important;
+    height: 29vh !important;
+  }
+
+  .tg-header__area-five {
+    background: #ffffff;
+  }
+
+  .contact-map-area .contact-info-wrap .list-wrap {
+    margin-top: 18px;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .contact-map-area .contact-info-wrap .list-wrap li:not(:last-child) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-map-area .contact-info-wrap .list-wrap {
+    gap: 20px;
+  }
+
+  .breadcrumb__area {
+    background-position: center;
+  }
+
+  .about-serv img {
+    width: 550px;
+    height: 361px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .widget-title {
+    margin-top: 60px;
+  }
+
+  button.accordion-button.collapsed {
+    font-size: 15px;
+  }
+
+  .blog-widget {
+    padding: 15px;
+  }
+
+  .footer__logo .logo-text p {
+    font-size: 15px;
+    color: white;
+  }
+
+  .accordion-button:not(.collapsed) {
+    font-size: 15px;
+
+  }
+}
