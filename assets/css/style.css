@@ -1627,12 +1627,14 @@ textarea {
 }
 
 .breadcrumb__area {
-  background: var(--tg-heading-color);
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  border-radius: 0 0 150px 0;
-  padding: 160px 0;
+    background: var(--tg-heading-color);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    border-radius: 0 0 150px 0;
+    padding: 0;
+    padding-top: 68px;
+    padding-bottom: 83px;
 }
 
 @media (max-width: 1199.98px) {
@@ -1645,7 +1647,10 @@ textarea {
 @media (max-width: 767.98px) {
   .breadcrumb__area {
     border-radius: 0 0 100px 0;
+    padding: 0px;
+    padding-bottom: 60px;
   }
+  
 }
 
 .breadcrumb__area:after {
@@ -1693,7 +1698,7 @@ textarea {
 }
 
 .breadcrumb__content .title {
-  font-size: 60px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 85px;
   color: var(--tg-color-white-default);
@@ -1710,7 +1715,13 @@ textarea {
 
 @media (max-width: 767.98px) {
   .breadcrumb__content .title {
-    font-size: 40px;
+    font-size: 20px;
+  }
+  .breadcrumb{
+    padding: 15px 15px;
+  }
+  .breadcrumb-wrap{
+    margin-top: 0px;
   }
 }
 
@@ -14840,4 +14851,21 @@ button.accordion-button.collapsed {
     font-size: 15px;
 
   }
+
+  .about-grid-card.style6 .box-icon {
+    justify-content: center;
+  }
+
+  .serv-icon img {
+    width: 101px !important;
+    height: 132px !important;
+  }
+
+  p.box-text {
+    text-align: center;
+  }
+}
+
+.blog-sidebar .blog-widget.service-widget:nth-of-type(2) {
+  display: none;
 }
