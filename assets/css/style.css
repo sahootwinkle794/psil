@@ -14891,4 +14891,6 @@ button.accordion-button.collapsed {
 .blog-sidebar .blog-widget.service-widget:nth-of-type(2) {
   display: none;
 }
-  
+.busy-img{
+  border-radius: 10px;
+}
